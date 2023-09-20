@@ -365,20 +365,6 @@ header{
     display: none;
 }
 
-/* instagram */
-
-.insta-div {
-    position: relative;
-    width: 90%;
-    z-index: 777;
-    
-}
-
-.insta-div div {
-    position: absolute;
-
-}
-
 
 /* PRODUCTS */
 
