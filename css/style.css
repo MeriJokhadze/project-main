@@ -1,0 +1,596 @@
+body{
+    scroll-behavior:smooth;
+}
+
+/* POP UP  */
+
+.content-box p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sub-div{
+    position: relative;
+    padding: 10px 30px ;
+    background-color: #71BC78;
+    box-shadow: 0 20px 50px rgba(82, 141, 78, 1);
+    display: inline;
+    margin-left: 1rem;
+    cursor: pointer;
+    box-shadow: 0 20px 50px rgba(82, 141, 78, 1);
+    margin-left: 25%;
+    cursor: pointer;
+    
+}
+
+.sub-btn::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 2%;
+    cursor: pointer;
+    background: rgba(111, 190, 105, 0.5) ;
+  
+}
+
+.sub-div span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #48924f, #71BC78);
+     }
+.sub-div span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #437748, #71BC78);
+   
+}
+
+.sub-div span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #469c4f, #71BC78);
+    animation: animate3 3s linear  infinite;
+}
+
+
+@keyframes animate3
+{
+    0%
+    {
+        transform: translateX(70%);
+    }
+    100%
+    {
+        transform: translateX(-70%);
+    }
+}
+
+.sub-div span:nth-child(4)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #437748, #71BC78);
+    animation: animate4 2s linear infinite;
+}
+
+
+.sub-div a{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+   
+    
+}
+
+.popup{
+    position: fixed;
+    z-index: 998;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    display: none;
+}
+
+.popup.popAct{
+    display: block;
+}
+.pop-up-cont-div{
+    position: relative;
+    width: 37.5rem;
+    height: 25rem ;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(82, 141, 78, 1);
+}
+
+.pop-up-cont-div .img-box{
+    position: relative;
+    width: 15rem;
+    height: 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-cont-div .img-box img{
+    position: relative;
+    max-height: 21rem;
+    z-index: 888;
+}
+
+.img-pop{
+    border-radius: 7rem;
+}
+.content-box h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+}
+
+.content-box p{
+    text-align: center;
+    margin-bottom: 4rem;
+    
+}
+
+.close{
+    position: absolute;
+    top: 1.1rem;
+    right: 1.1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+/* HEADER STYLES */
+
+header{
+    
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    height: 100%;
+   background-color: white;
+    
+}
+
+.header-div{
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    padding: 1.5% 3%;
+    background-color: white;
+    
+}
+
+.header-section div, .nav-ul, .header-section{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    /* border: 1px solid pink; */
+    justify-content: space-between; 
+}
+
+.svg-logo{
+    width: 110px;
+    vertical-align: middle;
+}
+
+
+.nav-bar ul{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav-bar ul li a{
+    color: #000;
+}
+.nav-bar ul li a:hover{
+    font-weight: 400;
+    color: #71BC78;
+    transition: color 0.3s ease;
+    
+}
+
+.fa:hover{
+    color: #71BC78;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon-bar{
+    width: 100px;
+    display: flex;
+    justify-content: space-around; 
+  
+}
+
+.icon-bar.activeBtn{
+    width: 350px;
+}
+
+/* HEADER ICON BAR  */
+
+.search-bar-btn{
+    background-color: inherit;
+    border: none;
+}
+.search-input{
+    display: none;
+}
+
+.search-input.activeBtn{
+    display: inline-block;
+    border: none;
+    border-bottom: 3px solid #71BC78 ;
+    border-radius: 3px;
+    outline: none;
+    color: #71BC78;
+    letter-spacing: 0.5px;
+    text-align: center;
+   
+}
+
+.search-input::placeholder{
+    text-align: center;
+    font-family: 'Belleza', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* section first */
+
+.first-section-banner{
+    background-image: url(../imgs/unsplash_YAPZt8wxMO4.png);
+    background-size: cover;
+    background-position: center;
+    height: 766px;
+}
+
+.first-section-banner p{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 110.59px;
+    font-size: 96px;
+    padding-top: 100px;
+    margin-bottom: 115px ;
+    margin-left: 37px;
+    color: black;
+    font-family: 'Belleza', sans-serif;
+    width: 584px;
+}
+
+.banner-container{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 756px;
+    height: 348px;
+    background-color: yellow;
+}
+
+
+/* ACCORDION SECTION */
+
+.accordion-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2% auto;
+    background-color: #71BC78;
+    align-items: center;
+      
+}
+
+.answer-text{
+    display: none;
+}
+
+.question-title{
+    font-family: 'Belleza', sans-serif;
+    letter-spacing: 1px;
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.question-title:hover{
+    color: #71BC78;
+    transition: color 0.2s ease;
+    font-weight: 500;
+    
+
+}
+.accordion-title{
+    width: 100%;
+    text-align: center;
+    font-family: 'Belleza', sans-serif;
+    padding: 3% 0;
+    letter-spacing: 1.5rem;
+    font-size: 6rem;
+    color: aliceblue;
+
+}
+.accordion-item{
+    width: 40% ;
+    margin-bottom: 1%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.accordion-item:hover{
+    box-shadow: 0 2px 8px hsl(150, 64%, 74%);
+   
+}
+
+.answer-text.act{
+    
+    display: block;
+    padding: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.1px;
+}
+
+.fa-chevron-down.hidden{
+    display: none;
+}
+
+/* instagram */
+
+.insta-div {
+    position: relative;
+    width: 90%;
+    z-index: 777;
+    
+}
+
+.insta-div div {
+    position: absolute;
+
+}
+
+
+/* PRODUCTS */
+
+#shop h2{
+    width: 100%;
+    text-align: center;
+    font-family: 'Belleza', sans-serif;
+    padding: 3% 0 7% 0;
+    letter-spacing: 1.5rem;
+    font-size: 6rem;
+    color: rgb(89, 115, 138);
+}
+.product-section h2{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+   
+}
+.product-section p{
+    font-size: large;
+    font-family: 'Quicksand', sans-serif;
+    width: 90%;
+    line-height: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    
+
+    
+}
+.product-div{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.product-img{
+    max-width: 250px;
+    
+    display: flex;
+
+}
+
+.product-title{
+    font-size: 1.2rem;
+    padding-left: 5%;
+    margin-bottom: 3%;
+}
+
+.shopping-btn{
+    margin-left: 60%;
+    cursor: pointer;
+    font-size: large;
+}
+
+.product-price{
+    padding-left: 5%;
+
+}
+
+.product-info{
+    max-width: 30rem;
+   
+}
+
+.insta-div{
+    height: 300px;
+    width: 100%;
+    background-color: orange;
+}
+
+/* registration */
+
+#registration{
+    
+    background-image: url(/imgs/annie-spratt-8mqOw4DBBSg-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.registration-field{
+    height: 70%;
+    width: 50%;
+    background-color: white; 
+    border-radius: 0.5rem;
+}
+
+.registration-field h2{
+    color: #2e5e33;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 5% 0 9% 0;
+}
+
+#singupForm {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 70%;
+    gap: 1rem;
+    text-transform: uppercase;
+    color: #2e5e33;
+}
+
+
+.form-div{
+    display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     /* border: 1px solid red; */
+   }
+
+.form-div input, option, select{
+    height: 1.5rem;
+    border: inherit;
+    border-bottom: 1px solid #6ebe75 ;
+    outline: none;
+    margin-top: 1rem;
+}
+
+label, option{
+    /* align-items:  baseline; */
+    font-size: large;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.fa-eye-slash{
+    margin-left: 90%;
+}
+
+
+.checkbox-label{
+    color: #176622f6;
+    text-transform: lowercase;
+    font-size: medium;
+}
+
+input[type="checkbox"]{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+
+input[type="date"]{
+    text-transform: uppercase;
+    color: #2e5e33;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#gender option{
+    text-transform: uppercase;
+    color: #2e5e33;
+    background-color: #afc9b1;
+    border: inherit;
+}
+
+#sing-up-btn{
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    width: 13rem;
+    border-radius: 1rem;
+    font-size: large;
+    background-color: #519c59;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: bold;
+    height: 4rem;
+    letter-spacing: 3px;
+}
+
+#sing-in-btn{
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    width: 13rem;
+    border-radius: 1rem;
+    font-size: large;
+    background-color: aliceblue;
+    text-transform: uppercase;
+    color: #519c59;
+    font-weight: bold;
+    height: 4rem;
+    letter-spacing: 3px;
+}
+
+#sing-up-btn:hover{
+    background-color: #71BC78;
+    box-shadow: 0 2px 8px hsl(150, 64%, 74%);
+}
+
+#sing-in-btn:hover{
+    background-color: #71BC78;
+    color: aliceblue;
+    box-shadow: 0 2px 8px hsl(150, 64%, 74%);
+}
+#registration-btns-div{
+    display: flex;
+    justify-content: space-evenly;
+
+}
