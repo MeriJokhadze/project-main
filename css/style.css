@@ -433,11 +433,6 @@ header{
    
 }
 
-.insta-div{
-    height: 300px;
-    width: 100%;
-    background-color: orange;
-}
 
 /* registration */
 
@@ -454,10 +449,11 @@ header{
 }
 
 .registration-field{
-    height: 70%;
+    height: 82%;
     width: 50%;
     background-color: white; 
     border-radius: 0.5rem;
+    box-shadow: 0 2px 8px hsl(150, 64%, 74%);
 }
 
 .registration-field h2{
@@ -490,7 +486,7 @@ header{
    }
 
 .form-div input, option, select{
-    height: 1.5rem;
+    height: 2rem;
     border: inherit;
     border-bottom: 1px solid #6ebe75 ;
     outline: none;
@@ -506,10 +502,19 @@ label, option{
 }
 
 
-.fa-eye-slash{
-    margin-left: 90%;
+.fa-eye-slash, .fa-eye{
+    margin-left: 95%;
 }
 
+.form-div input:hover{
+    box-shadow: 0 2px 8px hsl(150, 64%, 74%);
+    
+}
+
+.form-div option:hover{
+    box-shadow: 0 2px 8px hsl(150, 64%, 74%);
+    
+}
 
 .checkbox-label{
     color: #176622f6;
@@ -568,15 +573,34 @@ input[type="date"]{
 #sing-up-btn:hover{
     background-color: #71BC78;
     box-shadow: 0 2px 8px hsl(150, 64%, 74%);
+    transition: color 0.3s ease;
 }
 
 #sing-in-btn:hover{
     background-color: #71BC78;
     color: aliceblue;
     box-shadow: 0 2px 8px hsl(150, 64%, 74%);
+    transition: color 0.3s ease;
 }
 #registration-btns-div{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 2%;
 
+}
+
+.error-text{
+    color: red;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    margin-top: 0.3rem;
+}
+
+/* FOOTER */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    color: aliceblue;
 }

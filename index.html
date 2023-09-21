@@ -179,22 +179,17 @@
     </div>
 
     </section>
-    <section>
-        <div class="insta-div">
-            
-        </div>
-    </section>
     <section id="registration">
         <div class="registration-field">
             <h2> create your account</h2>
-            <form action="" id="singupForm">
+            <form action="" id="singupForm" method="post">
                 <div class="form-div">
                     <label for="username-input">NAME</label>
                     <input 
                     type="text"
                     name="username"
                     placeholder= ""
-                    id="username-input"
+                    id="usernameinput"
                     >
                     <p class="error-text" id="error-username"></p>
                 </div>
@@ -204,7 +199,7 @@
                     type="text"
                     name="surname"
                     placeholder= ""
-                    id="surname"
+                    id="surnameinput"
                     >
                     <p class="error-text" id="error-surname"></p>
                 </div>
@@ -216,83 +211,92 @@
                     placeholder= ""
                     id="email-input"
                     >
-                    <p class="error-text" id="error-email"></p>
+                    <p class="kkk" id="email-error"></p>
                 </div>
                 <div class="form-div">
                     <label for="password-input"> PASSWORD</label>
-                    <i class="fa-regular fa-eye-slash" style="color: #277c4c;"></i>
+                    <i class="fa-regular fa-eye-slash" id="openeye" style="color: #277c4c;"></i>
                     <input 
                     type="password"
                     name="password"
                     placeholder= ""
-                    id="password-input"
+                    id="passwordinput"
                     >
         
-                    <p class="error-text" id="error-pasw"></p>
+                    <p class="error-text" id="error-password"></p>
                 </div>
                 <div class="form-div">
                     <label for="password-two-input"> REAPET PASSWORD</label>
-                    <i class="fa-regular fa-eye-slash dis-in-block" style="color: #277c4c;"></i>
                     <input 
                     type="password"
-                    name="password-two"
-                    
-                    id="password-two-input"
+                    name="passwordtwo"
+                    id="passwordtwoinput"
                     class="dis-in-block"
                     >
-                   
-                    <p class="error-text" id="error-pasw-two"></p>
+                    <p class="error-text" id="error-passwordtwo"></p>
                 </div>
                 <div class="form-div">
                     <label for="birthdate"> select your birth date</label>
                     <input
                     type="date" 
                     name="birthdate"
-                    id="birthdate">
+                    id="birthdate"
+                    required
+                    >
                 </div>
                 <div class="form-div">
                 <label for="gender">Choose a gender:</label>
                 <select name ="gender" 
                 id="gender" >
+                    <option value="">Select an option</option>
                     <option value="female">female</option>
                     <option value="male">male</option>
                     <option value="non-binary">Non-Binary</option>
                     <option value="notto">Prefer not to say</option>
                 </select>
+                <p class="error-text" id="error-gender"></p>
                 </div>
                 <div id="checkDiv">
                     <label for="agree-check" class=" checkbox-label"> i agree that i am human</label>
-                    <input type="checkbox" name="agree" id="agree-check">
-                    <p class="error-text" id="error-check"></p>
+                    <input type="checkbox" name="agree" id="agreecheck">
+                    <p class="error-text" id="error-agree"></p>
                 </div>
                 
                 <div id="registration-btns-div"> 
                     <div class="form-div">
-                        <input 
-                        type="button" 
-                        onclick=""
-                        value="Sign up"
-                        id="sing-up-btn"
-                        >
+                        <button type="submit"  id="sing-up-btn">Sign up</button>
                         <p class="error-text" id="error-btn"></p>
                     </div>
 
                     <div class="form-div">
-                        <input 
-                        type="button" 
-                        onclick=""
-                        value="Sign in"
-                        id="sing-in-btn"
-                        >
-                        <p class="error-text" id="error-btn"></p>
+                        <button  id="sing-in-btn">Sign in</button>
+                       
                     </div>
                 </div>
-
              </form>
         </div>
     </section>
     <footer>
-        
+        <div class="footer-container">
+            <div class="logo-div">
+                <a href="index.html">
+                    <img src="imgs/logo.svg"  class="svg-logo" alt="logo">
+                 </a> 
+            </div> 
+
+            <div class="footer-menu">
+                <a href="#"> plants</a>
+                <a href="">products</a>
+                <a href="">faq</a>
+                <a href="">about</a>
+            </div>
+
+            <div class="contact-div">
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+            </div>
+        </div>
     </footer>
     <script type="module" src="index.js"></script>
 </body>
