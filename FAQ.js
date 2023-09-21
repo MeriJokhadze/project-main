@@ -3,7 +3,7 @@
 
 export function faqInfo(){
 
-fetch(`https://perenual.com/api/article-faq-list?key=sk-Swy465083dd9c3b432190`, { method: 'GET' })
+fetch(`https://perenual.com/api/article-faq-list?key=sk-Y7Fv650c3525611912185`, { method: 'GET' })
 .then(response => {
   if (!response.ok){
       throw "შეცდომა "+ response.status;

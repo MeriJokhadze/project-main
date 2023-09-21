@@ -12,7 +12,6 @@ body{
     position: relative;
     padding: 10px 30px ;
     background-color: #71BC78;
-    box-shadow: 0 20px 50px rgba(82, 141, 78, 1);
     display: inline;
     margin-left: 1rem;
     cursor: pointer;
@@ -368,6 +367,11 @@ header{
 
 /* PRODUCTS */
 
+
+#shop{
+    padding-bottom: 10%;
+}
+
 #shop h2{
     width: 100%;
     text-align: center;
@@ -599,8 +603,35 @@ input[type="date"]{
 /* FOOTER */
 
 .footer-container{
+    padding: 5%;
     display: flex;
     justify-content: space-between;
     height: 10rem;
     color: aliceblue;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact-div{
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    width: 8rem;
+}
+
+.fa-brands {
+    color: #2e5e33;
+}
+
+.fa-brands:hover{
+    box-shadow: 0 20px 50px rgba(82, 141, 78, 1);
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 2px;
 }

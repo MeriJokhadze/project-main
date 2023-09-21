@@ -28,6 +28,32 @@ formBox.addEventListener("submit", function (element){
 
     //email
 
+    let emaill = document.getElementById("email-input");
+    
+    function valemail(){
+
+        let emailInput = document.getElementById("email-input").value;
+        let textError = document.getElementById("email-error");
+        let emailreg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        if (emailInput.match(emailreg)){
+            textError.innerText = "your email is vaild";
+            textError.style.color = "green";
+            emaill.style.border = "2px solid green";
+        } else{
+            textError.innerText = "your email is invaild";
+            textError.style.color = "red";
+            emaill.style.border = "2px solid red";
+        }
+
+        if (emailInput == ""){
+            textError.innerText = " ";
+        }
+    }   
+
+    emaill.addEventListener("keyup", valemail);
+
+    
     
     //password
 
