@@ -1,6 +1,8 @@
 
 'use strict'
 
+// import axios from 'axios';
+
 // IMPORT FILES 
 
 import {faqInfo} from './FAQ.js';
@@ -20,6 +22,15 @@ searchBtn.addEventListener('click', ()=> {
     document.querySelector('.icon-bar').classList.toggle("activeBtn");
 })
 
+// axios.get('https://perenual.com/api/species-list?key=sk-Y7Fv650c3525611912185')
+//   .then(function (response) {
+//     // handle success
+//     console.log(response);
+//   })
+//   .catch(function (error) {
+//     // handle error
+//     console.log(error);
+//   })
 
 
 // POP UP //
