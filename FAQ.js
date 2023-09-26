@@ -15,13 +15,16 @@ fetch(`https://perenual.com/api/article-faq-list?key=sk-Y7Fv650c3525611912185`, 
 })
 .then(result => {
   const fragment = document.createDocumentFragment();
- 
-  result.data.forEach((element) => {
+ const totalItems = result.data.length;
+
+ const partOf = Math.ceil(totalItems / 4);
+ result.data.forEach((element, index) => {
     //  ფორ იჩით გადავუარე მოსულ ინფორმაციას
     //  შევქმენი ელემენტები მოსული თითოეული ობჯექტის
     //  ინფორმაციისთვის, მივანიჭე კლასი და ჩავაგდე ეს ინფორმაცია
     //  საბოლოოდ დივი ჩავაგდე ფრაგმენტში
-
+  if(index < partOf){
+    
     let itemDiv = document.createElement("div");
     itemDiv.classList.add("accordion-item");
     let h2 = document.createElement("h2");
@@ -32,12 +35,18 @@ fetch(`https://perenual.com/api/article-faq-list?key=sk-Y7Fv650c3525611912185`, 
     h2.innerText = element.question;
     p.innerText = element.answer;
 
+  
+
     itemDiv.appendChild(h2)
     itemDiv.appendChild(p);
     fragment.appendChild(itemDiv);
+  }
   });
   
   document.querySelector(".accordion-div").appendChild(fragment);
+
+
+
 
   // გაწერილია აკარდეონის ფუნქცია
 
@@ -57,5 +66,8 @@ fetch(`https://perenual.com/api/article-faq-list?key=sk-Y7Fv650c3525611912185`, 
 });
 
 }
+
+
+
 
 
