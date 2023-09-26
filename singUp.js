@@ -112,6 +112,19 @@ formBox.addEventListener("submit", function (element){
 })
 
 
+// // sing in 
+// let singIn = document.getElementById("sing-in-btn");
+// let cont = document.getElementById('reg-cont');
+// let singInForm = document.getElementsByClassName('sing-in-div');
+// function sing(){
+//     cont.innerHTML = "";
+//     singInForm.classList.add('active');
+// }
+// singIn.addEventListener('click', sing);
+
+
+
+
 // show hide pssw
 
 let passwordShow = document.getElementById("passwordinput");
@@ -132,8 +145,5 @@ if (passwordShow.type == "password"){
 }}    
 
 icon.addEventListener('click', showPass );
-
-
-
 
 }

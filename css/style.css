@@ -474,6 +474,7 @@ select {
     border-bottom: 1px solid #6ebe75;
     outline: none;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 label,
@@ -482,6 +483,8 @@ option {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
+
+
 }
 
 .fa-eye-slash,
@@ -566,6 +569,7 @@ input[type="date"] {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2%;
+   
 }
 
 .error-text {
@@ -574,6 +578,7 @@ input[type="date"] {
     letter-spacing: 2px;
     margin-top: 0.3rem;
 }
+
 
 /* FOOTER */
 
@@ -612,11 +617,14 @@ input[type="date"] {
 }
 
 
-.container{
+.slider-container{
     display: flex;
     width: 90vw;
     margin: 0 auto;
+    
 }
+
+
 
 .panel
 {

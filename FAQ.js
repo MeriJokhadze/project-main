@@ -5,8 +5,8 @@ export function faqInfo(){
 
 
 
-  // თუ აპი არ მუშაობს სცადეთ შემდეგი ლინკი  -> https://perenual.com/api/article-faq-list?key=sk-ka8L650c397d896a92190
-fetch(`https://perenual.com/api/article-faq-list?key=sk-Y7Fv650c3525611912185`, { method: 'GET' })
+  // თუ აპი არ მუშაობს სცადეთ შემდეგი ლინკი  -> https://perenual.com/api/article-faq-list?key=sk-Y7Fv650c3525611912185
+fetch(`https://perenual.com/api/article-faq-list?key=sk-ka8L650c397d896a92190`, { method: 'GET' })
 .then(response => {
   if (!response.ok){
       throw "შეცდომა "+ response.status;

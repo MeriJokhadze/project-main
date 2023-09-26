@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS  -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Meta Tags for SEO -->
+     <meta name="keywords" content="plants, plant shop, gardening, indoor plants, outdoor plants">
+     <meta name="description" content="Welcome to [Your Plant Shop Name] – your one-stop destination for a wide variety of indoor and outdoor plants. Discover the beauty of nature and enhance your living spaces with our lush greenery.">
+     <meta name="author" content="[Your Name or Your Shop's Name]">
+ 
+     <!-- Facebook Meta Tags for Social Sharing -->
+     <meta property="og:title" content="[Your Plant Shop Name] - Premium Plant Selection">
+     <meta property="og:description" content="Explore a diverse range of indoor and outdoor plants at [Your Plant Shop Name]. Transform your home and garden with our beautiful plant collection.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="[Your Website URL]">
+     <meta property="og:image" content="[URL to an Image representing your shop or plants]">
+     <meta property="og:image:width" content="1200"> 
+     <meta property="og:image:height" content="630"> 
+
+    <!-- ICON AND TITLE -->
+    <title> Mery's Secret Garden </title>
+    <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
+
+    <!-- CSS LINKS  -->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICON LINKS   -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- FONT LINKS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Inter&family=Playfair+Display:wght@500;800&family=Poppins:wght@500&family=Quicksand&family=Raleway:wght@700;800&family=Unlock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Inter&family=Playfair+Display:wght@500;800&family=Poppins:wght@500&family=Raleway:wght@700;800&family=Unlock&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="loader-div">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header class="header-section">
+       <div class="header-div">
+        <div class="logo-div">
+            <a href="index.html">
+                <img src="imgs/logo.svg"  class="svg-logo" alt="logo">
+             </a> 
+        </div> 
+        <div class="nav-bar">
+            <nav>
+                <ul class="nav-ul">
+                    <li><a href="#">Plants</a></li>
+                    <li><a href="#shop">Products</a></li>
+                    <li><a href="#Plantfaq">Plant FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="burger-bar" id="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </div>
+        <div class="icon-bar">
+            <input type="search" class="search-input" placeholder="search the plant">
+            <button class="search-bar-btn">
+                <i class="fa-light fa-magnifying-glass fa fa-beat-fade"></i>
+            </button>
+
+            <a href="#registration">
+                <i class="fa-regular fa-user fa ">
+
+                </i></a>
+            <i class="fa-thin fa-cart-shopping fa"></i>
+        </div>
+       </div>
+    </header>
+
+    <section id="registration" >
+        <div class="reg-style">
+        <div class="registration-field">
+            <h2> create your account</h2>
+            <form action="" id="singupForm" method="post">
+            <div id="reg-cont">
+                <div class="form-div">
+                    <label for="usernameinput">NAME</label>
+                    <input 
+                    type="text"
+                    name="username"
+                    placeholder= ""
+                    id="usernameinput"
+                    >
+                    <p class="error-text" id="error-username"></p>
+                </div>
+                <div class="form-div">
+                    <label for="surnameinput">SURNAME</label>
+                    <input 
+                    type="text"
+                    name="surname"
+                    placeholder= ""
+                    id="surnameinput"
+                    >
+                    <p class="error-text" id="error-surname"></p>
+                </div>
+                <div class="form-div">
+                    <label for="email-input">EMAIL</label>
+                    <input 
+                    type="email"
+                    name="email"
+                    placeholder= ""
+                    id="email-input"
+                    >
+                    <p class="kkk" id="email-error"></p>
+                </div>
+                <div class="form-div">
+                    <label for="passwordinput"> PASSWORD</label>
+                    <i class="fa-regular fa-eye-slash" id="openeye" style="color: #277c4c;"></i>
+                    <input 
+                    type="password"
+                    name="password"
+                    placeholder= ""
+                    id="passwordinput"
+                    >
+        
+                    <p class="error-text" id="error-password"></p>
+                </div>
+                <div class="form-div">
+                    <label for="passwordtwoinput"> REAPET PASSWORD</label>
+                    <input 
+                    type="password"
+                    name="passwordtwo"
+                    id="passwordtwoinput"
+                    class="dis-in-block"
+                    >
+                    <p class="error-text" id="error-passwordtwo"></p>
+                </div>
+                <div class="form-div">
+                    <label for="birthdate"> select your birth date</label>
+                    <input
+                    type="date" 
+                    name="birthdate"
+                    id="birthdate"
+                    required
+                    >
+                </div>
+                <div class="form-div">
+                <label for="gender">Choose a gender:</label>
+                <select name ="gender" 
+                id="gender" >
+                    <option value="">Select an option</option>
+                    <option value="female">female</option>
+                    <option value="male">male</option>
+                    <option value="non-binary">Non-Binary</option>
+                    <option value="notto">Prefer not to say</option>
+                </select>
+                <p class="error-text" id="error-gender"></p>
+                </div>
+                <div id="checkDiv">
+                    <label for="agreecheck" class=" checkbox-label"> i agree that i am human</label>
+                    <input type="checkbox" name="agree" id="agreecheck">
+                    <p class="error-text" id="error-agree"></p>
+                </div>
+                
+
+                <div id="registration-btns-div"> 
+                    <div class="form-div">
+                        <button type="submit"  id="sing-up-btn">Sign up</button>
+                        <p class="error-text" id="error-btn"></p>
+                    </div>
+
+                    <div class="form-div">
+                        <button  id="sing-in-btn">Sign in</button>
+                       
+                    </div>
+
+                   
+                </div>
+            </div>
+             </form>
+        </div>
+     </div>
+    </section>
+   
+    <footer>
+        <div class="footer-container">
+            <div class="logo-div">
+                <a href="index.html">
+                    <img src="imgs/logo.svg"  class="svg-logo" alt="logo">
+                 </a> 
+            </div> 
+
+            <div class="footer-menu">
+                <a href="#"> plants</a>
+                <a href="">products</a>
+                <a href="">faq</a>
+                <a href="">about</a>
+            </div>
+
+            <div class="contact-div">
+                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+            </div>
+
+         
+        </div>
+    </footer>
+    <!-- <script src="./node_modules/axios/dist/axios.min.js"></script> -->
+    <script type="module" src="singUp.js"></script>
+</body>
+
+</html>

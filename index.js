@@ -6,9 +6,8 @@
 // IMPORT FILES 
 
 import {faqInfo} from './FAQ.js';
-import {singVal} from './singUp.js';
 faqInfo();
-singVal();
+
 
 
 
@@ -46,6 +45,9 @@ window.onload = function(){
 closePop.addEventListener('click', () => {
     popup.classList.remove('popAct')
 })
+
+
+//slider panels
 
 const panels = document.querySelectorAll('.panel');
 panels.forEach(panel => {
