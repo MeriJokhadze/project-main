@@ -162,6 +162,10 @@ body {
 
 /* HEADER STYLES */
 
+.header-div > .burger-bar{
+    display: none;
+}
+
 header {
     font-family: 'Quicksand', sans-serif;
     font-weight: 200;
@@ -179,6 +183,8 @@ header {
     background-color: white;
 }
 
+
+
 .header-section div, .nav-ul, .header-section {
     display: flex;
     align-items: center;
@@ -189,9 +195,8 @@ header {
     width: 110px;
     vertical-align: middle;
 }
-
 .nav-bar{
-    display: block;
+    display: inline-block;
 }
 
 .nav-bar ul {
@@ -621,6 +626,7 @@ input[type="date"] {
     display: flex;
     width: 90vw;
     margin: 0 auto;
+    justify-content: center;
     
 }
 
@@ -635,19 +641,15 @@ input[type="date"] {
     border-radius: 50px;
     flex: 0.1;
     position: relative;
-    transition: flex 0.5s ease-in;
+    transition: flex 0.9s ease-in;
     color: white;
     cursor: pointer;
     margin: 10px;
 }
 
 .panel h3{
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
     opacity: 0;
     display: none;
-    transition: flex 0.1s ease-in;
 }
 
 .panel.active{
@@ -656,8 +658,10 @@ input[type="date"] {
 }
 
 .panel.active h3{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
     display: block;
-    opacity: 5;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
     color: white;
@@ -666,19 +670,86 @@ input[type="date"] {
     font-weight: bold;
     background-color: #5e8f62;
     letter-spacing: 1px;
-    transition: flex 0.1s ease-in;
+    opacity: 1;
+    transition: ease-in 2s;
     
 }
 
-@media(max-width:480px){
+
+
+.nav-bar{
+    display: inline-block;
+}
+
+.burger-bar {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    
+   
+}
+
+.line{
+   
+    width:100%;
+    height: 4px;
+    background-color:#437748;
+    border-radius: 15px;
+    margin-bottom: 3px;
+}
+
+
+/* media */
+
+ @media (max-width: 1000px ){
+    .pop-up-cont-div{
+        display: none;
+    }
+
+    #sing-up-btn {
+        width: 8rem;
+    }
+
+    #sing-in-btn{
+        width: 8rem;
+    }
+    .header-div > .burger-bar{
+        display: inline-block;
+    }
+    .nav-bar nav{
+        display: none;
+    }
+
+    
+      .line1Active {
+        position: absolute;
+        transform: rotate(-45deg) ;
+        transition: 1s ease-in;
+    }
+
+    .line3Active{
+        transform: rotate(45deg) ;
+        transition: 1s ease-in;
+    }
+
+   .burger-bar .line2NO{
+        display: none;
+    }
+ 
+
+    /* panel */
+
     .container{
-        width: 100vw;
+        width:100vw;
     }
 
     .panel:nth-of-type(4),.panel:nth-of-type(5){
-        display: none;
+        display:none;
     }
-}
-
-/* media */
+ }
 
