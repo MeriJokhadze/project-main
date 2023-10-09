@@ -81,3 +81,6 @@ burgerBar.addEventListener('click', function(){
     line2.classList.toggle('line2NO');
     line.classList.toggle('lineAc');
 })
+
+let mery = "kata";
+console.log(mery)

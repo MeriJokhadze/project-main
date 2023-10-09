@@ -131,7 +131,7 @@ body {
 .pop-up-cont-div .img-box img {
     position: relative;
     max-height: 21rem;
-    z-index: 888;
+    z-index: 995;
 }
 
 .img-pop {
@@ -271,14 +271,14 @@ header {
     height: 766px;
 }
 
-.first-section-banner p {
+.first-section-banner > h1 {
     text-align: center;
     font-size: 18px;
     letter-spacing: -0.5px;
     line-height: 110.59px;
     font-size: 96px;
-    padding-top: 100px;
-    margin-bottom: 115px;
+    padding-top: 6%;
+    margin-bottom: 3%;
     margin-left: 37px;
     color: black;
     font-family: 'Belleza', sans-serif;
@@ -286,19 +286,56 @@ header {
 }
 
 .banner-container {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     position: absolute;
-    z-index: 999;
-    width: 756px;
-    height: 348px;
-    background-color: yellow;
+    /* z-index: 950; */
+    width: 50%;
+    height: 66.8%;
+    background-color: white;
+    padding: 5%;
+}
+
+.box-text:nth-child(1){
+color: #000;
+font-family: 'Quicksand', sans-serif;
+font-size: 20px;
+font-style: normal;
+width: 50%;
+font-weight: 400;
+line-height: normal;
+}
+
+.box-text:nth-child(2){
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+   
+    width: 60%;
+    font-weight: 250;
+    line-height: normal;
+    }
+
+.media-div > a{
+    opacity: 0.5;
+    font-size: 36px;
+    
+    font-weight: bold;
+    line-height: normal;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 2rem;
+}
+
+.media-div{
+    margin-top: 2rem;
 }
 
 /* ACCORDION SECTION */
 
 .accordion-div {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -363,6 +400,7 @@ header {
 
 #shop {
     padding-bottom: 10%;
+    background-color: white;
 }
 
 #shop h2 {
@@ -573,7 +611,7 @@ input[type="date"] {
 #registration-btns-div {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2%;
+    margin-top: 3%;
    
 }
 
@@ -751,5 +789,115 @@ input[type="date"] {
     .panel:nth-of-type(4),.panel:nth-of-type(5){
         display:none;
     }
+
+    /* registration */
+    .registration-field{
+        width: 90%;
+    }
+    #registration-btns-div{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .form-div:nth-child(1){
+        margin-bottom: 3%;
+    }
+
+
+    /* footer */
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .accordion-title{
+     width: 90%;
+    text-align: center;
+    font-family: 'Belleza', sans-serif;
+    padding: 3% 0;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    color: aliceblue;
+    text-shadow: 0 2px 8px hsl(150, 64%, 74%);
+    }
+
+/* accordion */
+    .accordion-item {
+        width: 95%;
+       
+    }
+
+/* shop */
+
+
+#shop h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+}
+
+.product-div{
+   flex-direction: column;
+   align-items: center;
+}
+/* first section */
+
+.first-section-banner > h1 {
+    font-size: 40px;
+    line-height: 2rem;
+    font-size: 24px;
+    padding-top: 20%;
+    margin-bottom: 3%;
+    color: black;
+    font-family: 'Belleza', sans-serif;
+    width:70%;
+   
+}
+
+.banner-container {
+    
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    padding: 5%;
+}
+
+.box-text:nth-child(1){
+color: #000;
+font-family: 'Quicksand', sans-serif;
+font-size: 18px;
+
+font-style: normal;
+width: 90%;
+font-weight: bold;
+line-height: normal;
+}
+
+.box-text:nth-child(2){
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    width: 100%;
+    font-weight: 250;
+    line-height: normal;
+    }
+
+.media-div > a{
+    opacity: 0.5;
+    font-size: 24px;
+    
+    font-weight: bold;
+    line-height: normal;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 2rem;
+}
+
+.media-div{
+    margin-top: 1rem;
+}
+
  }
 

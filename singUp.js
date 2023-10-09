@@ -1,6 +1,4 @@
-export function singVal()
-{
-     
+ 
     
 // forms 
 
@@ -146,4 +144,3 @@ if (passwordShow.type == "password"){
 
 icon.addEventListener('click', showPass );
 
-}
